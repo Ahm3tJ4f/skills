@@ -51,11 +51,11 @@ If the input mixes both types, separate them before rewriting: put procedures to
 
 ## Step 2: Analyze
 
-Load `references/rules.md` and `references/dictionary.md`. Read them before you start the analysis. Then run three tests on every sentence.
+Load `../../references/rules.md` and `../../references/dictionary.md`. Read them before you start the analysis. Then run three tests on every sentence.
 
 **Test A: Every word has one job**
 
-Check each word against `references/dictionary.md`:
+Check each word against `../../references/dictionary.md`:
 
 - Is the word approved in the dictionary with the correct part of speech and meaning?
 - If not approved, can you put it in one of the 22 technical noun categories?
@@ -64,7 +64,7 @@ Check each word against `references/dictionary.md`:
 
 **Test B: The structure parses flat**
 
-Check against these rule categories from `references/rules.md`:
+Check against these rule categories from `../../references/rules.md`:
 
 - Approved verb form only (imperative, simple present, simple past, simple future, infinitive, past participle as adjective)
 - Active voice in procedures; active preferred in descriptions (passive only when agent is genuinely unknown)
@@ -93,7 +93,7 @@ For the **rewrite** branch: continue to Step 3.
 Fix violations in this order. The sequence prevents wasted work: you fix structure before words, so you only check each word once.
 
 1. **Verb form.** Convert non-approved modals to approved ones - may/might/shall/should/would → CAN or MUST (or the imperative in procedures); do not use COULD for possibility. ("You can adjust" is already valid STE; do not "fix" it.) Convert complex tenses ("has been installed" → "was installed" or "is installed"), and -ing verbs ("when you are doing" → "when you do").
-2. **Voice.** Convert passive to active. Use one of four methods from `references/rules.md` (Section 3):
+2. **Voice.** Convert passive to active. Use one of four methods from `../../references/rules.md` (Section 3):
    - Move the agent (the object of "by") to subject position
    - Change an infinitive verb to an active verb
    - Use the imperative in procedures
@@ -110,7 +110,7 @@ If the text contains safety instructions (WARNING or CAUTION): apply STE rules w
 
 ## Step 4: Verify
 
-Load `references/checklist.md`. Run every item. Each rule must either pass or be flagged with a remaining violation. Check everything.
+Load `../../references/checklist.md`. Run every item. Each rule must either pass or be flagged with a remaining violation. Check everything.
 
 **Completion criterion:** All checklist items checked. Every violation is either resolved (rewrite branch) or reported with a suggested rewrite (check branch).
 
@@ -131,8 +131,8 @@ If the input already complies, say so. Do not force changes onto compliant text.
 
 | File                       | When to load                                                                                  |
 | -------------------------- | --------------------------------------------------------------------------------------------- |
-| `references/rules.md`      | Step 2 (analysis) and Step 3 (rewriting): the full 53 rules with examples                     |
-| `references/dictionary.md` | Step 2 word checks: approved words, 22 technical noun categories, 4 technical verb categories |
-| `references/checklist.md`  | Step 4 verification: every rule to check                                                      |
+| `../../references/rules.md`      | Step 2 (analysis) and Step 3 (rewriting): the full 53 rules with examples                     |
+| `../../references/dictionary.md` | Step 2 word checks: approved words, 22 technical noun categories, 4 technical verb categories |
+| `../../references/checklist.md`  | Step 4 verification: every rule to check                                                      |
 
 Load only the file you need for the current step.

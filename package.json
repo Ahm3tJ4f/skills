@@ -1,0 +1,23 @@
+{
+  "name": "asd-ste100",
+  "version": "1.0.0",
+  "description": "Makes dense, confusing AI writing actually readable. Rewrites text into ASD-STE100 style — one meaning per word, one idea per sentence. Two modes: rewrite or audit.",
+  "keywords": [
+    "pi-package",
+    "asd-ste100",
+    "simplified-technical-english",
+    "ste",
+    "plain-english"
+  ],
+  "license": "MIT",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ahm3tJ4f/asd-ste100-skill"
+  },
+  "pi": {
+    "skills": [
+      "./skills"
+    ]
+  }
+}
