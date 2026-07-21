@@ -1,4 +1,4 @@
-# ASD-STE100: Flat Parse
+# ASD-STE100 Skill
 
 I love using agents to learn things, whether I'm implementing something or just studying how it works. But models love throwing around fancy vocabulary that my brain has zero chance of processing at 2am.
 
