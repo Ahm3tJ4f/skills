@@ -6,6 +6,12 @@ Inspired by [a popular tweet](https://x.com/geogristle/status/207849257951190677
 
 It follows the [ASD-STE100](https://www.asd-ste100.org/) Simplified Technical English specification: one approved meaning per word, one part of speech per word, one idea per sentence. No jargon dumps. No walls of text. Just flat, unambiguous sentences you can actually parse.
 
+## What is ASD-STE100 anyway?
+
+Think of it as a rulebook for writing instructions that nobody can misunderstand. It came out of the European Aerospace Industry (the ASD, or AeroSpace and Defence Industries Association of Europe), where a misread sentence can literally cost lives. But the same ideas work anywhere you need writing to be crystal clear.
+
+The rules boil down to a few simple ideas: use short sentences, stick to one meaning per word, avoid jargon, and always say things the same way. If "start" means one thing on page 3, it shouldn't mean something else on page 12.
+
 ## What it does
 
 - **Rewrite** mode takes dense, confusing writing and transforms it into flat, simple prose
