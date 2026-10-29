@@ -17,6 +17,12 @@ The rules boil down to a few simple ideas: use short sentences, stick to one mea
 - **Rewrite** mode takes dense, confusing writing and transforms it into flat, simple prose
 - **Check** mode flags violations and suggests fixes without changing the original text
 
+## Install
+
+```bash
+npx skills add Ahm3tJ4f/skills --skill asd-ste100
+```
+
 ## License
 
-[MIT](LICENSE)
+[MIT](../../LICENSE)
