@@ -83,6 +83,7 @@ Two panels side by side (for "wrong / correct" or "before / after"):
 ```
 
 ## Tables
+Write the caption before the table. The build moves it under the table (and under the footnote), the same as a figure caption.
 ```html
 <div class="table-cap" id="fixes">Fixes and their cost</div>
 <table>

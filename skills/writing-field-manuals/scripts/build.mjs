@@ -102,6 +102,9 @@ body = body.replace(/<div class="table-cap"([^>]*)>(?:Table \d+\.\s*)?/g, (all, 
   if (id) { if (ids.tab.has(id)) report.error(0, 'E205', `Table id "${id}" is used two times.`, 'Give each table its own id.'); ids.tab.set(id, tNo) }
   return `<div class="table-cap"${attrs}>Table ${tNo}. `
 })
+// Table captions go under the table (and under its footnote), the same as figure captions.
+body = body.replace(/(<div class="table-cap"[^>]*>[\s\S]*?<\/div>)\s*(<table\b[\s\S]*?<\/table>)(\s*<div class="foot">[\s\S]*?<\/div>)?/g,
+  (all, cap, table, foot = '') => `${table}${foot}\n${cap}`)
 body = body.replace(/\{\{(fig|tab):([\w-]+)\}\}/g, (all, kind, id) => {
   const no = ids[kind].get(id)
   if (!no) { report.error(lineOf(src.indexOf(all)), 'E204', `Reference ${all}: no ${kind === 'fig' ? 'figure' : 'table'} has id "${id}".`, 'Add id="' + id + '" to the figure or table, or fix the name.'); return all }

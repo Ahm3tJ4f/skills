@@ -67,8 +67,8 @@ svg:not(.pele) text { font-family: var(--sans); font-size: 12px; fill: var(--ink
 svg .b { font-weight: bold; }
 svg .s { font-size: 10.5px; }
 svg .m { font-family: var(--mono); }
-.table-cap { font: bold 13.5px var(--sans); text-align: center; margin: 20px 0 6px; }
-table { width: 100%; border-collapse: collapse; border: 2px solid var(--ink); font: 12.5px/1.35 var(--sans); }
+.table-cap { font: bold 13.5px var(--sans); text-align: center; margin: 8px 0 16px; }
+table { width: 100%; margin-top: 16px; border-collapse: collapse; border: 2px solid var(--ink); font: 12.5px/1.35 var(--sans); }
 th { text-align: center; border-bottom: 2px solid var(--ink); vertical-align: bottom; }
 th, td { padding: 6px 8px; border-left: 1px solid var(--ink); }
 td { border-top: 1px solid var(--ink); vertical-align: top; }
