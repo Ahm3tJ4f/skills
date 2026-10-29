@@ -1,6 +1,6 @@
 # Skills
 
-My personal collection of agent skills. I use them every day with Claude Code, Codex, Pi and other agents.
+My personal collection of agent skills.
 
 ## Skills
 
@@ -14,22 +14,20 @@ My personal collection of agent skills. I use them every day with Claude Code, C
 See all skills in this repo:
 
 ```bash
-npx skills add Ahm3tJ4f/skills --list
+npx skills add ahm3tj4f/skills --list
 ```
 
 Install one skill:
 
 ```bash
-npx skills add Ahm3tJ4f/skills --skill asd-ste100
+npx skills add ahm3tj4f/skills --skill asd-ste100
 ```
 
 Install all skills:
 
 ```bash
-npx skills add Ahm3tJ4f/skills --skill '*'
+npx skills add ahm3tj4f/skills --skill '*'
 ```
-
-Add `-g` to install for your user, not only for the current project.
 
 `writing-field-manuals` uses `asd-ste100` to write its text, so install both for the best results.
 

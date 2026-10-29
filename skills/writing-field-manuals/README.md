@@ -11,7 +11,7 @@ It can write six types of documents: explainer, lesson, decision record, compari
 ## Install
 
 ```bash
-npx skills add Ahm3tJ4f/skills --skill writing-field-manuals --skill asd-ste100
+npx skills add ahm3tj4f/skills --skill writing-field-manuals --skill asd-ste100
 ```
 
 The text is written in Simplified Technical English with the `asd-ste100` skill. Without it, the skill uses its own short rules.

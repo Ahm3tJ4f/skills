@@ -20,7 +20,7 @@ The rules boil down to a few simple ideas: use short sentences, stick to one mea
 ## Install
 
 ```bash
-npx skills add Ahm3tJ4f/skills --skill asd-ste100
+npx skills add ahm3tj4f/skills --skill asd-ste100
 ```
 
 ## License
