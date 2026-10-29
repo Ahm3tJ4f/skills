@@ -7,7 +7,7 @@ My personal collection of agent skills.
 | Skill | What it does |
 |---|---|
 | [asd-ste100](skills/asd-ste100) | Makes dense, confusing AI writing readable. Rewrites text into ASD-STE100 Simplified Technical English. Two modes: rewrite or check. |
-| [writing-field-manuals](skills/writing-field-manuals) | Writes technical explainers as one HTML page in the style of a 1980s field manual, with Mermaid diagrams and vintage themes. Diagrams are rendered by [Pele](https://github.com/obsidianmd/pele). Use it for the best experience. |
+| [writing-field-manuals](skills/writing-field-manuals) | Writes technical explainers as one HTML page in the style of a 1980s field manual, with Mermaid diagrams and vintage themes. Diagrams are rendered by [Pele](https://github.com/obsidianmd/pele), which comes bundled with the skill. |
 
 ## Install
 
