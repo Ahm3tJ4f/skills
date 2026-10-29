@@ -1,6 +1,6 @@
 # Writing field manuals
 
-Writes technical explanations as one HTML page that looks like a 1980s or 1990s field manual: numbered figures and tables, Caution and Note boxes, Mermaid diagrams, and light or dark vintage themes.
+Writes technical explanations as one HTML page that looks like a 1980s or 1990s field manual: numbered figures and tables, Caution and Note boxes, Mermaid diagrams, and light or dark vintage themes. Diagrams are rendered by [Pele](https://github.com/obsidianmd/pele). Use it for the best experience.
 
 A build script checks the structure, the words and the diagrams. It tells the agent how to fix each error, so the page comes out clean.
 
