@@ -1,0 +1,48 @@
+---
+title: Docker Image Layers
+domain: Containers
+type: explainer
+question: Why does a small code change make the Docker build slow again?
+theme:          # required: ask the user first (SKILL.md, Step 0)
+---
+<div class="bluf"><div class="head">Bottom line</div>
+  <p>Docker keeps each layer in a cache. When one layer changes, Docker builds it and all layers after it again. Copy the dependency files first and the source code last.</p>
+</div>
+
+<h2>Layers and the Cache</h2>
+<p>Each instruction in a Dockerfile makes a layer. Docker keeps each layer in a cache.</p>
+<p>In the next build, Docker uses a layer from the cache if the instruction and its input files did not change. {{fig:layers}} shows the layers of one image.</p>
+<figure id="layers" data-mermaid caption="Layers of the frontend image (top: last instruction)">
+  block
+    columns 1
+    dist["Build output (dist/)"]
+    src["Source code"]
+    nm["node_modules (pnpm install)"]
+    pkg["package.json and lock file"]
+    base["Base image (node:22-alpine)"]
+</figure>
+
+<h2>The Order of Instructions</h2>
+<p>When one layer changes, Docker builds that layer again. It also builds all layers after it. {{fig:decision}} shows the decision for each instruction.</p>
+<figure id="decision" data-mermaid caption="Decision of Docker for one instruction">
+  flowchart TD
+    a[Next instruction] --> b{Instruction and input files changed?}
+    b -- NO --> c{Was the layer before it from the cache?}
+    b -- YES --> d[Build the layer again]:::focus
+    c -- YES --> e[Use the layer from the cache]
+    c -- NO --> d
+</figure>
+
+<div class="table-cap" id="order">Two orders of instructions</div>
+<table>
+  <thead><tr><th>Order</th><th>After a change in src/</th></tr></thead>
+  <tbody>
+    <tr><td><code>COPY . .</code> then <code>RUN pnpm install</code></td><td>pnpm install runs again.</td></tr>
+    <tr><td><code>COPY package.json pnpm-lock.yaml</code>, <code>RUN pnpm install</code>, then <code>COPY . .</code></td><td>pnpm install comes from the cache.</td></tr>
+  </tbody>
+</table>
+<p class="note">{{tab:order}} shows why the second order is faster for each code change.</p>
+
+<div class="caution"><div class="head">Caution</div>
+  <p>Do not copy secrets into an image. If a later instruction deletes the file, the file stays in the earlier layer.</p>
+</div>

@@ -1,0 +1,49 @@
+/* Themes. Select one with `theme:` in the front matter or `--theme` on the build command. */
+
+/* ---- Light ---- */
+/* paper: the default cream page (no rules needed) */
+
+:root[data-theme="microfilm-print"] { --desk: #c9c7c0; --paper: #eeece5; --ink: #1d1c19; }
+[data-theme="microfilm-print"] .page { background-image: var(--grain-dark), repeating-linear-gradient(0deg, rgba(0,0,0,.022) 0 1px, transparent 1px 3px); box-shadow: 0 0 0 1px #b9b7af, 0 2px 10px rgba(0,0,0,.25); }
+[data-theme="microfilm-print"] .page * { text-shadow: 0 0 .5px rgba(29,28,25,.45); }
+
+:root[data-theme="whiteprint"] { --desk: #c8ccd2; --paper: #f3f1ea; --ink: #1f3a63; }
+[data-theme="whiteprint"] .page { box-shadow: 0 2px 10px rgba(0,0,0,.22);
+  background-image: var(--grain-dark),
+    linear-gradient(rgba(31,58,99,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(31,58,99,.07) 1px, transparent 1px),
+    linear-gradient(rgba(31,58,99,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(31,58,99,.035) 1px, transparent 1px);
+  background-size: 220px 220px, 96px 96px, 96px 96px, 24px 24px, 24px 24px; }
+
+:root[data-theme="blue-photocopy"] { --desk: #c3cbd2; --paper: #e8edf1; --ink: #14202c; }
+[data-theme="blue-photocopy"] .page { background-image: var(--grain-dark), repeating-linear-gradient(0deg, rgba(20,32,44,.02) 0 1px, transparent 1px 3px); box-shadow: 0 0 0 1px #b4bec7, 0 2px 10px rgba(0,0,0,.25); }
+[data-theme="blue-photocopy"] .page * { text-shadow: 0 0 .5px rgba(20,32,44,.4); }
+
+:root[data-theme="drafting-vellum"] { --desk: #cfccc4; --paper: #f4f2ec; --ink: #2b2e33; }
+[data-theme="drafting-vellum"] .page { box-shadow: 0 2px 10px rgba(0,0,0,.22);
+  background-image: var(--grain-dark),
+    linear-gradient(rgba(70,140,200,.16) 1px, transparent 1px), linear-gradient(90deg, rgba(70,140,200,.16) 1px, transparent 1px),
+    linear-gradient(rgba(70,140,200,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(70,140,200,.08) 1px, transparent 1px);
+  background-size: 220px 220px, 96px 96px, 96px 96px, 24px 24px, 24px 24px; }
+
+/* ---- Dark ---- */
+:root[data-theme="microfilm"] { color-scheme: dark; --desk: #030303; --paper: #151515; --ink: #e8e4d6; }
+[data-theme="microfilm"] .page { background-image: var(--grain-light), repeating-linear-gradient(0deg, rgba(255,255,255,.018) 0 1px, transparent 1px 3px); box-shadow: 0 0 0 1px #2a2a2a, 0 2px 20px rgba(0,0,0,.8); }
+[data-theme="microfilm"] .page * { text-shadow: 0 0 .6px rgba(232,228,214,.6); }
+
+:root[data-theme="night-blueprint"] { color-scheme: dark; --desk: #060d16; --paper: #10263d; --ink: #dbe7f2; }
+[data-theme="night-blueprint"] .page { box-shadow: 0 2px 18px rgba(0,0,0,.7);
+  background-image: var(--grain-light),
+    linear-gradient(rgba(219,231,242,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(219,231,242,.06) 1px, transparent 1px),
+    linear-gradient(rgba(219,231,242,.03) 1px, transparent 1px), linear-gradient(90deg, rgba(219,231,242,.03) 1px, transparent 1px);
+  background-size: 220px 220px, 96px 96px, 96px 96px, 24px 24px, 24px 24px; }
+
+:root[data-theme="blue-microfiche"] { color-scheme: dark; --desk: #020406; --paper: #0d1620; --ink: #d9e4ec; }
+[data-theme="blue-microfiche"] .page { background-image: var(--grain-light), repeating-linear-gradient(0deg, rgba(160,200,230,.025) 0 1px, transparent 1px 3px); box-shadow: 0 0 0 1px #1c2836, 0 2px 20px rgba(0,0,0,.85); }
+[data-theme="blue-microfiche"] .page * { text-shadow: 0 0 .6px rgba(217,228,236,.55); }
+
+:root[data-theme="graphite-drafting"] { color-scheme: dark; --desk: #0b0c0e; --paper: #1b1e22; --ink: #dfe3e6; }
+[data-theme="graphite-drafting"] .page { box-shadow: 0 2px 18px rgba(0,0,0,.75);
+  background-image: var(--grain-light),
+    linear-gradient(rgba(110,160,210,.10) 1px, transparent 1px), linear-gradient(90deg, rgba(110,160,210,.10) 1px, transparent 1px),
+    linear-gradient(rgba(110,160,210,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(110,160,210,.05) 1px, transparent 1px);
+  background-size: 220px 220px, 96px 96px, 96px 96px, 24px 24px, 24px 24px; }

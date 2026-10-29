@@ -1,0 +1,32 @@
+[
+  {
+    "skills": ["writing-field-manuals"],
+    "query": "Explain the N+1 query problem as a lesson. Teach me properly. Use the microfilm theme.",
+    "expected_behavior": [
+      "Writes a source file with type: lesson and theme: microfilm in /tmp/<topic>/",
+      "Each lesson ends with a REMEMBER box; the last lesson has 3 to 5 self-check questions",
+      "Uses Mermaid figures (sequence with a loop, xychart, decision flowchart), not hand-drawn SVG",
+      "Runs build.mjs until it prints BUILT, then check.sh with screenshots, and opens the page"
+    ]
+  },
+  {
+    "skills": ["writing-field-manuals"],
+    "query": "Here is RFC 10017 and our Keycloak setup. Write a decision document: where must the refresh token live?",
+    "files": ["sources/rfc10017.txt", "sources/realm-erp.yaml"],
+    "expected_behavior": [
+      "Uses type: decision with a BOTTOM LINE box that states the decision",
+      "Has an Options table and a Consequences section, with facts quoted from the sources",
+      "Marks invented values as examples",
+      "Build has 0 errors; no em dashes; no should/may/would in the text"
+    ]
+  },
+  {
+    "skills": ["writing-field-manuals"],
+    "query": "Show the layers of our Docker image in the manual style.",
+    "expected_behavior": [
+      "Uses a Mermaid block diagram with columns 1, top layer first",
+      "Refers to the figure in the text with {{fig:id}} before the figure",
+      "Examines the screenshot of the figure before delivery"
+    ]
+  }
+]
